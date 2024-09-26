@@ -1,3 +1,4 @@
+package unit1;
 /**
  * <b> Description:<br><br> </b> This program prints info about me * Additionally I have experimented with more print commands <br>
  * <b><br> Date:<br> </b>2024-09-30 </b> 
