@@ -1,7 +1,14 @@
 package unit1;
-
+/**
+ *  Description: The program outlines the rules for bingo and displays a bingo board
+ *  Date:2024-09-27
+ * @author NathanWood
+ */
 public class Bingo {
-
+	/**
+	 * Entry Point to the program.
+	 * @param args unused
+	 */
 	public static void main(String[] args) {
 
 		// TODO Auto-generated method stub
