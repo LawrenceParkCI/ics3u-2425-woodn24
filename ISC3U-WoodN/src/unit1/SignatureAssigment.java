@@ -1,8 +1,18 @@
 package unit1;
-
+/**
+ *   Description: This program displays my name using a custom text font and displays the image of a cat
+ *   Date:2024-09-27 
+ * @author NathanWood
+ */
 public class SignatureAssigment {
-
+	/**
+	 * Entry Point to the program.
+	 * @param args unused
+	 */
 	public static void main(String[] args) {
+
+
+		// This is my name made in text	
 
 		System.out.println("NNNNNNNN        NNNNNNNN                          tttt         hhhhhhh                                                     WWWWWWWW                           WWWWWWWW                                           d::::::d     ");
 		System.out.println("NNNNNNNN        NNNNNNNN                          tttt         hhhhhhh                                                     WWWWWWWW                           WWWWWWWW                                           d::::::d     ");
@@ -23,17 +33,10 @@ public class SignatureAssigment {
 		System.out.println("NNNNNNNN         NNNNNNN  aaaaaaaaaa  aaaa         ttttttttttt  hhhhhhh     hhhhhhh  aaaaaaaaaa  aaaa nnnnnn    nnnnnn                 WWW             WWW            ooooooooooo      ooooooooooo      ddddddddd   ddddd     ");
 		System.out.println("");
 		System.out.format("\n\n\n\n\n\n");
-				
-				
-				
-		/**
-		 * 
-		 */
 
-        
-				
-				
-				
+
+		// This is my cat made of text
+
 		System.out.println("        @@                             @@@@                                   ");
 		System.out.println("        @@@@@@@@@                   @@@@@@@@@@                                ");
 		System.out.println("        @@ @@@ @@@@@@   @@@@@     @@@@@@@@@ @@@                               ");
@@ -65,40 +68,6 @@ public class SignatureAssigment {
 		System.out.println("           @@@@@   @@    @@  @@@          @@@@@                               ");
 		System.out.println("         @@@@@@@@@@@@@@@@@@@@@@@      @@@@@@@@@@                              ");
 		System.out.println("           @@   @@@ @@@@@  @@ @@@@@@@@@@@@@@                                  ");
-
-
-
-                            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-                       
-        
-
-		
 	}
 
 }           
