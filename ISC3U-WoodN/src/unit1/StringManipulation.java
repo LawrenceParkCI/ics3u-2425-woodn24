@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class StringManipulation {
 	/**
 	 * Description: Experimenting with string manipulation 
-	 * Date:2024-09-27
+	 * Date:2024-10-10
 	 * @author NathanWood
 	 */
 	public static void main(String[] args) {
