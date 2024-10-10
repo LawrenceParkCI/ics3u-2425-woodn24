@@ -1,7 +1,11 @@
 package unit1;
 import java.util.Scanner;
 public class Alive {
-
+	/**
+	 * Description: Experimenting with string manipulation 
+	 * Date:2024-09-27
+	 * @author NathanWood
+	 */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner (System.in) ;
 
@@ -19,7 +23,7 @@ public class Alive {
 		int CY; // Current year
 		int CM; // Current Month
 
-		
+
 		// Questions and defining variables 
 		System.out.println("Enter Your Birthday");
 		System.out.print("Year:");
@@ -43,8 +47,8 @@ public class Alive {
 		// Adjusts every unit into days and from days into hours slept
 		AliveT = ((AliveY * 365) + (AliveM * 30) + (AliveD));
 		Slept = (AliveT*8);
-		
-		
+
+
 		// Prints the final result
 		System.out.println("You have been alive for "  + AliveT + " Days");
 		System.out.println("you have slept for " + Slept + " hours in your lifetime");
