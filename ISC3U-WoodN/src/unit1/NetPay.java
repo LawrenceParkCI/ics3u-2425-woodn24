@@ -1,12 +1,12 @@
 package unit1;
 public class NetPay {
 	/**
-	 * Description: Experimenting with string manipulation 
+	 * Description: Calculating Net Pay 
 	 * Date:2024-10-10
 	 * @author NathanWood
 	 */
 	public static void main(String[] args) {
-		
+
 		// Variables
 		int netPay, hours, wage, insurance;
 		double tax;
