@@ -2,27 +2,20 @@ package unit1;
 import java.util.Scanner;
 public class Alive {
 	/**
-	 * Description: Experimenting with string manipulation 
-	 * Date:2024-09-27
+	 * Description: Calculates time alive and the time you have slept based off of your date of birth and the current date
+	 * Date:2024-10-10
 	 * @author NathanWood
 	 */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner (System.in) ;
 
 		//Questions
-		int Yob; // Year of birth
-		int Mob; // Month of birth
-		int Dob; // Date of birth
-		int AliveD;
-		int AliveM;
-		int AliveY;
-		int AliveT;
-		int Slept;
-		//Pre-Diffined Info
-		int CD; //Current Date
-		int CY; // Current year
-		int CM; // Current Month
+		int Yob, Mob, Dob; // Year, Month, Date of birth
+		int AliveD, AliveM, AliveY, AliveT;// Alive Days, Months, Years, Total Time
+		int Slept;// Total time slept
 
+		//Pre-Diffined Info
+		int CD, CM, CY; //Current Date, Month, Year
 
 		// Questions and defining variables 
 		System.out.println("Enter Your Birthday");
