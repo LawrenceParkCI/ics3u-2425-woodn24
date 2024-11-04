@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Description: Using Math Methods Worksheet
  * Date: 2024 10 15
- * @author 
+ * @author Nathan Wood
  */
 public class UsingMathMethods {
 
@@ -105,12 +105,6 @@ public class UsingMathMethods {
 
 		//Does your program give a different answer if 0.3333333 is input instead of 0.33 for the power?
 		//Yes, the real number result becomes 1.9999998613705687 
-
-
-
-
-
-
 
 		sc.close();
 	}

@@ -75,6 +75,10 @@ public class Casting {
 		long myLong2 = 0; 
 		int myInt4 = 14; 
 
+		System.out.print("hello" + myInt + myDouble + myInt2+ myDouble2 + myInt3 + myLong + myLong2 + myInt4);
+		
+		
+		
 		System.out.println("Part 2");
 
 		//understanding what you can do with casting, can you round the following variable to the nearest 10th?
