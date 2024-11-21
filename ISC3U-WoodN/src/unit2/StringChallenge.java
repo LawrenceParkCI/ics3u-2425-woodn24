@@ -5,9 +5,9 @@ public class StringChallenge {
 	public static void main(String[] args) {
 
 		/**
-		 * Description:
-		 * Date:
-		 * @author 
+		 * Description: Experimenting with conditional statments
+		 * Date: 2024-11-21
+		 * @author Nathan Wood
 		 */
 
 		//This is for the portfolio
@@ -34,8 +34,9 @@ public class StringChallenge {
 		String ca4 = "LP";
 		int Score = 3;
 		int Score2 =1;
+		int points = 2;
 
-		while (Score > 0) {
+		while (Score > 0) { //repeat question until correct answer
 
 			System.out.println("What highschool does Nathan Wood attend?");
 			String HS = in.nextLine();
@@ -52,6 +53,7 @@ public class StringChallenge {
 			} else {
 				Score = 2;
 				System.out.println("Maybe just try Again");
+				points -= 1;
 
 
 			}
@@ -59,7 +61,7 @@ public class StringChallenge {
 
 
 
-		while (Score2 > 0) {
+		while (Score2 > 0) { //repeat question until correct answer
 
 			System.out.println("What age do you think Nathan was when he started high school");
 			String age = in.nextLine();
@@ -75,10 +77,19 @@ public class StringChallenge {
 			}else{
 				Score2 = 2;
 				System.out.println("Maybe just try Again");
+				points -= 1;
 
 			}
+
 		}
+
+		//Quiz Result
+		//multiply a double and an intiger for the other type of casting
+		System.out.println("You got " + ((points/2)* 100) + "% correct!");
+		System.out.println("Thankyou for learning about Nathan");
 		in.close();
+
+
 	}
 
 }
