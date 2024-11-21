@@ -1,10 +1,10 @@
 package unit1;
 import java.util.Scanner;
 public class Carpet {
-	/*
-	 * 
-	 * 
-	 * 
+	/**
+	 * Description: Multiplication to find length of a carpet
+	 * Date: Oct 15, 2024
+	 * @author Nathan Wood
 	 */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner (System.in) ;

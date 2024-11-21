@@ -1,7 +1,11 @@
 package unit1;
 import java.util.Scanner;
 public class InputChars {
-
+	/**
+	* Description: InputChars
+	* Date: 2024 10 17
+	* @author Nathan Wood
+	*/
 
 
 	public static void main(String[] args) {
