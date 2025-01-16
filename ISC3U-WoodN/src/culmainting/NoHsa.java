@@ -68,26 +68,26 @@ public class NoHsa {
 			d = ImageIO.read(new File("src/images/d.png"));
 			ee = ImageIO.read(new File("src/images/e.png"));
 			f = ImageIO.read(new File("src/images/f.png"));
-			g = ImageIO.read(new File("src/images/g.jpg"));
+			g = ImageIO.read(new File("src/images/g.png"));
 			h = ImageIO.read(new File("src/images/h.png"));
 			i = ImageIO.read(new File("src/images/i.png"));
-			j = ImageIO.read(new File("src/images/j.jpg"));
+			j = ImageIO.read(new File("src/images/j.png"));
 			k = ImageIO.read(new File("src/images/k.png"));
 			l = ImageIO.read(new File("src/images/l.png"));
 			m = ImageIO.read(new File("src/images/m.png"));
 			n = ImageIO.read(new File("src/images/n.png"));
-			o = ImageIO.read(new File("src/images/o.jpg"));
+			o = ImageIO.read(new File("src/images/o.png"));
 			p = ImageIO.read(new File("src/images/p.png"));
 			q = ImageIO.read(new File("src/images/q.png"));
 			r = ImageIO.read(new File("src/images/r.png"));
 			s = ImageIO.read(new File("src/images/s.png"));
 			t = ImageIO.read(new File("src/images/t.png"));
 			u = ImageIO.read(new File("src/images/u.png"));
-			v = ImageIO.read(new File("src/images/v.jpg"));
+			v = ImageIO.read(new File("src/images/v.png"));
 			w = ImageIO.read(new File("src/images/w.png"));
 			x = ImageIO.read(new File("src/images/x.png"));
 			y = ImageIO.read(new File("src/images/y.png"));
-			z = ImageIO.read(new File("src/images/z3.png"));
+			z = ImageIO.read(new File("src/images/z.png"));
 
 
 
@@ -185,17 +185,16 @@ public class NoHsa {
 
 					
 					
-					switch(guessChar[letter]) {
-					case 'A':
+					switch(Character.toUpperCase(guessChar[letter])) {
+					case 'A': 
 						System.out.println("1");
 						c.drawImage(a, imagePosX[letter],  imagePosY[rounds], 90, 90, null);
-
 						break;
-					case 'B':
+					case 'B': 
 						System.out.println("2");
 						c.drawImage(b, imagePosX[letter],  imagePosY[rounds], 90, 90,null);
 						break;
-					case 'C':
+					case 'C': 
 						System.out.println("3");
 						c.drawImage(cc, imagePosX[letter],  imagePosY[rounds], 90, 90,null);
 						break;
