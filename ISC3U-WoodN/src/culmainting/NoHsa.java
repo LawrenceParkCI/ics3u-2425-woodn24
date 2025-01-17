@@ -285,7 +285,7 @@ public class NoHsa {
 	 * Check each individual correct word against your guess
 	 * 
 	 * @param ArrayList<String>,Whichever hand is to be printed out
-	 * @param String guess is the word inputted by the user
+	 * @param String guess is the word inputed by the user
 	 * @return return boolean grammar is true if the guess is equal to one of the real words
 	 */
 	public static boolean grammar(String guess, ArrayList<String> WordList) {
@@ -297,31 +297,14 @@ public class NoHsa {
 		return false;
 	}
 	/**
-
-
 	 * Checks if the guess is the same as the answer
-
-
-	 * adds a value to win to end the loop
-
-
+	 * adds a value to win at the end of the loop 
 	 * 
-
-
 	 * @param String currentWord is the correct word 
-
-
-	 * @param String guess is the word inputted by the user
-
+	 * @param String guess is the word inputed by the user
 	 * @param byte win is the value used to end the main method game loop
-
-
 	 * @return return boolean wordCorrect
-
-
 	 */
-
-
 	public static boolean wordCorrect(String currentWord, String guess, byte win) {
 		if ((currentWord).equalsIgnoreCase(guess)) {
 			return true;
@@ -329,24 +312,15 @@ public class NoHsa {
 			return false;
 		}
 	}
-	/**
-
-	 * Prints yellow boxes at the location of letters that appear in the correct word
-
+	
+/**
+	 * Prints yellow boxes at a location 
+	 * compares every letter in the correct word to the guessed word
 	 * @param char [] currentChar all the characters of the current correct word in an array 
-
-
 	 * @param char [] guessChar all the characters of the correct word in an array 
-
 	 * @param int rounds tracks the number of rounds
-
-
 	 * @return void
-
-
 	 */
-
-
 	public static void yellower(char[] currentChar, char[] guessChar, int rounds) {
 		int [] squares;
 		squares = new int [5];
@@ -369,28 +343,16 @@ public class NoHsa {
 			}
 		}
 	}
+	
 	/**
-
-	 * Prints yellow boxes at the location of letters that appear in the correct word
-
-
-	 * 
-
-
+	 * Prints green boxes at a location 
+	 * Compares letters in the current word to letters in the guessed word in their current location
 	 * @param char [] currentChar all the characters of the current correct word in an array 
-
-
 	 * @param char [] guessChar all the characters of the correct word in an array 
-
 	 * @param int rounds tracks the number of rounds
-
-
 	 * @return void
-
-
 	 */
-
-
+	
 	public static void greener(char[] currentChar, char[] guessChar, int rounds) {
 		int[]squareX= {50, 150, 250, 350, 450};
 		int[]squareY= {100, 200, 300, 400, 500};
@@ -406,6 +368,14 @@ public class NoHsa {
 			}
 		}
 	}
+	
+	/**
+	 * Prints grey boxes at a location
+	 * square y position is based on the round your on
+	 * @param char [] currentChar all the characters of the current correct word in an array 
+	 * @param int rounds tracks the number of rounds
+	 * @return void
+	 */
 	public static void greyer(int rounds) {
 		for(int i = 0; i < 5; i++) {
 			int[]squareX= {50, 150, 250, 350, 450};
