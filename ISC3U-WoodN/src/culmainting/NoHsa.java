@@ -1,4 +1,3 @@
-
 package culmainting;
 import java.awt.Color;
 import java.awt.image.BufferedImage;
@@ -7,24 +6,23 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
-//import java.awt.Color;
 import java.util.Scanner;
 
 import javax.imageio.ImageIO;
 
 import hsa_new.Console;
 public class NoHsa {
+	/**
+	Description: Wordle
+	Date: 2025-01-16
+	@author Nathan Wood
+	 */
 	static Console c = new Console (40,150);
-	//			static Console c = new Console (40,10);
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		/**
-		Description: 
-		Date: 2025-01-16
-		@author Nathan Wood
-		 */
+		
 
 		//Funky Variables
 		int rounds = 0;
@@ -151,8 +149,8 @@ public class NoHsa {
 		char currentCh5=currentWord.charAt(4);
 		char [] currentChar = {currentCh1, currentCh2, currentCh3, currentCh4, currentCh5};
 		System.out.println(currentWord);
-		int Win = 1;
-		while (Win >= 1) {
+		byte win = 1;
+		while ((win >= 1)) {
 
 			//System.out.println("\u001B[32m  Green Color  \u001B[0m");
 			c.setColor(Color.white);
@@ -177,8 +175,9 @@ public class NoHsa {
 				greyer(rounds);
 				yellower(currentChar, guessChar, rounds);
 				greener (currentChar, guessChar, rounds);
-				wordCorrect(currentWord, guess);
-				
+				wordCorrect(currentWord, guess, win);
+				System.out.println(win);
+
 				for(int letter = 0; letter < 5; letter++) {
 					int[] imagePosX = {50, 150, 250, 350, 450};
 					int[] imagePosY= {100, 200, 300, 400, 500};
@@ -294,10 +293,8 @@ public class NoHsa {
 						System.out.println("Fail lol");
 						break;
 					}
-//					greyer(rounds);
-//					yellower(currentChar, guessChar, rounds);
-//					greener (currentChar, guessChar, rounds);
-//					wordCorrect(currentWord, guess);
+					greyer(rounds);
+					
 				}
 
 
@@ -314,7 +311,17 @@ public class NoHsa {
 
 
 
-
+	/**
+     * Creates a {@code BufferedInputStream}
+     * with the specified buffer size,
+     * and saves its  argument, the input stream
+     * {@code in}, for later use.  An internal
+     * buffer array of length  {@code size}
+     * is created and stored in {@code buf}.
+     *
+     * @param   in     the underlying input stream.
+     * @param   size   the buffer size.
+     */
 	public static boolean Grammer(String guess, ArrayList<String> WordList) {
 		for(int i = 0; i < WordList.size(); i++) {
 			if ((WordList.get(i)).equalsIgnoreCase(guess)) {
@@ -323,7 +330,8 @@ public class NoHsa {
 		}
 		return false;
 	}
-	public static boolean wordCorrect(String currentWord, String guess) {
+	public static boolean wordCorrect(String currentWord, String guess, byte win) {
+		win = 2;
 		return currentWord.equalsIgnoreCase(guess);
 	}
 	public static void yellower(char[] currentChar, char[] guessChar, int rounds) {
@@ -369,7 +377,6 @@ public class NoHsa {
 			}
 		}
 	}
-
 	public static void greyer(int rounds) {
 
 		for(int i = 0; i < 5; i++) {
